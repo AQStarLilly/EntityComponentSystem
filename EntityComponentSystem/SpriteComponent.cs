@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
+// Responsible for rendering the texture sprite to the screen
 public class SpriteComponent : Component
 {
     public Texture2D Texture { get; set; }

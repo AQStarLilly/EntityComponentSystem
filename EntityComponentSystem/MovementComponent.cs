@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
+// Responsible for player movement 
 public class MovementComponent : Component
 {
     public float Speed { get; set; } = 200f; // Movement speed in pixels per second

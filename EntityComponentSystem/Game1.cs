@@ -5,14 +5,16 @@ using Microsoft.Xna.Framework.Input;
 
 namespace EntityComponentSystem
 {
+    // Main Game Loop - Handle initialization as well as all loading and updating for the game
     public class Game1 : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-
+        // Player gameObject
         GameObject player;
 
+        // texture for rendering the player
         Texture2D playerTexture;
 
         public Game1()
@@ -23,6 +25,7 @@ namespace EntityComponentSystem
 
         protected override void Initialize()
         {
+            // Create the player and set it's initial position
             player = new GameObject();
             player.Position = new Vector2(100, 100);
 
